@@ -14,7 +14,7 @@ toc.load_ipython_extension();
 
 // adapted from https://gist.github.com/magican/5574556
 
-define(["require", "jquery", "base/js/namespace"], function (require, $, IPython) {
+define(["require", "jquery", "base/js/namespace"], function (require, $) {
   "use strict";
 
   var make_link = function (h) {
@@ -124,7 +124,7 @@ define(["require", "jquery", "base/js/namespace"], function (require, $, IPython
       IPython.toolbar.add_buttons_group([
         {
           'label'   : 'Table of Contents',
-          'icon'    : 'fa-list',
+          'icon'    : 'icon-list',
           'callback': toggle_toc,
           'id'      : 'toc_button'
         },
